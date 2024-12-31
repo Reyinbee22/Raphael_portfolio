@@ -48,44 +48,65 @@
 
 
 /* Navbar */
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; /* p-4 */
-    background-color: #1a202c; /* gray-900 */
-    color: white;
-  }
-  
-  .navbar h1 {
-    font-size: 1.25rem; /* text-xl */
-    font-weight: bold;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  color: white;
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hide hamburger button and menu for larger screens */
+.navbar .hamburger {
+  display: none;
+}
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
   .navbar ul {
-    display: flex;
-    list-style-type: none;
-    gap: 1rem; /* space-x-4 */
+    display: none; /* Hide the navigation menu by default */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
   }
-  
-  .navbar a {
-    color: white;
-    font-size: 1rem;
+
+  .navbar ul.open {
+    display: flex; /* Show menu when it's open */
   }
-  
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
   .navbar .hamburger {
-    display: none; /* Hide for larger screens */
+    display: block; /* Show the hamburger button */
   }
-  
-  @media (max-width: 768px) {
-    .navbar ul {
-      display: none; /* Hide the navigation menu for smaller screens */
-    }
-  
-    .navbar .hamburger {
-      display: block;
-    }
-  }
+}
+
 /* Projects Section */
 .projects {
     padding: 1.5rem; /* p-6 */
