@@ -9,7 +9,6 @@ import sql from '../assets/SQL.jpeg';
 import powerbi from '../assets/powerbi.png';
 import python from '../assets/python.jpeg';
 import spark from '../assets/spark.png';
-import tableau from '../assets/tableau.png';
 import visualization from '../assets/visualization.png';
 
 const Skills = () => {
@@ -17,7 +16,6 @@ const Skills = () => {
     { name: 'Excel', icon: excel },
     { name: 'SQL', icon: sql },
     { name: 'Python', icon: python },
-    { name: 'Tableau', icon: tableau },
     { name: 'Apache Spark', icon: spark },
     { name: 'Kafka', icon: kafka },
     { name: 'Airflow', icon: airflow },
