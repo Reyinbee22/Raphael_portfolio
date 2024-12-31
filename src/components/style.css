@@ -48,7 +48,7 @@
 
 
 /* Navbar */
-
+/* Base styles for navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -82,6 +82,21 @@
 /* Hide hamburger button and menu for larger screens */
 .navbar .hamburger {
   display: none;
+  cursor: pointer; /* Make it clickable */
+}
+
+.navbar .hamburger button {
+  background: transparent;
+  border: none;
+  font-size: 30px; /* Increase the size */
+  color: white; /* Light color to make it visible */
+  padding: 10px;
+  cursor: pointer; /* Indicate it's clickable */
+  transition: color 0.3s ease;
+}
+
+.navbar .hamburger button:hover {
+  color: #f39c12; /* Highlight color when hovered */
 }
 
 /* Mobile styles (max-width: 768px) */
