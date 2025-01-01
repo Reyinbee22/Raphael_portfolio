@@ -14,6 +14,7 @@ import visualization from '../assets/visualization.png';
 const Skills = () => {
   const skills = [
     { name: 'Excel', icon: excel },
+    { name: 'Linux', icon: excel },
     { name: 'SQL', icon: sql },
     { name: 'Python', icon: python },
     { name: 'Apache Spark', icon: spark },
